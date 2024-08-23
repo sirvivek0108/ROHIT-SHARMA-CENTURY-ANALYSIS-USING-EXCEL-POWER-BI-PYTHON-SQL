@@ -109,7 +109,12 @@ select * from century;
     group by `month`
     order by count(`S.No.`) desc;
     
+     -- client ask 10. max score against teams
     
+     SELECT  `Against`,  max(SCORE)
+     FROM CENTURY 
+     group by `Against`
+     order by max(score) desc;
     
      
      
